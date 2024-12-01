@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@295&family=Parkinsans:wght@300..800&family=Poppins:ital@1&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto; 
+  font-style: normal;
+}
+
+body{
+  height:90vh;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgb(192, 189, 189);
+}
+
+.container{
+  max-width:1100px;
+  width:100%;
+  background:whitesmoke;
+  border-radius: 15px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.container .content{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:25px 20px;
+}
+
+.content .topic{
+  font-size:16px;
+  font-weight:500;
+  color:palevioletred;
+}
+
+.content .image-box{
+  max-width:55%;
+}
+.content .image-box img{
+  width:100%;
+  border-radius:8px;
+}
+.content form{
+  width:40%;
+  margin-right:30px;
+}
+.content .input-box{
+  height:50px;
+  width:100%;
+  margin:16px 0;
+  position:relative;
+}
+.content .input-box input{
+  position:absolute;
+  height:100%;
+  width:100%;
+  border-radius:6px;
+  outline:none;
+  padding-left:14px;
+  background:rgb(223, 169, 187);
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color:palevioletred;
+  background-color:whitesmoke;
+}
+
+.content .input-box label{
+  position:absolute;
+  left:18px;
+  top:50%;
+  color:#6f787e;
+  font-size:16px;
+  pointer-events:none;
+  transform: translateY(-50%);
+  transition:all 0.3s ease;
+}
+
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top:0;
+  left:12px;
+  display:14px;
+  color:palevioletred;
+  background:whitesmoke;
+}
+.content .msg-box{
+  min-height:100px;
+  position:relative;
+}
+.content .msg-box textarea{
+  position:absolute;
+  height:100%;
+  width:100%;
+  resize:none;
+  background:rgb(223, 169, 187);
+  border:2px solid transparent;
+  border-radius:6px;
+  outline:none;
+}
+
+.content .msg-box textarea:focus{
+  border-color:palevioletred;
+  background-color: whitesmoke;
+}
+
+
+.content .msg-box label{
+  position:absolute;
+  font-size:16px;
+  color:#6f787e;
+  left:18px;
+  top:6px;
+  pointer-events:none;
+  transition: all 0.4s ease;
+}
+.content .msg-box textarea:focus ~ label{
+  left:12px;
+  top:-10px;
+  color:palevioletred;
+  background:whitesmoke;
+}
+
+.content .input-box input[type="submit"]{
+  color:whitesmoke;
+  background:palevioletred;
+  padding-left:0;
+  font-size:18px;
+  font-weight:500;
+  transition:all 0.4s ease;
+}
+
+.content .input-box input[type="submit"]:hover{
+  color: rgb(204, 140, 161);
+  background-color: whitesmoke;
+}
+.content .input-box input[type="submit"]:active{
+  background-color:rgb(214, 82, 126);
+  color:whitesmoke;
+}

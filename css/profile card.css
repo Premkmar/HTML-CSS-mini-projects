@@ -1,0 +1,166 @@
+/*Google fonts (parkinsons) */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@295&family=Parkinsans:wght@300..800&family=Poppins:ital@1&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.profile-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  max-width:400px;
+  width:100%;
+  background-color:bisque;
+  border-radius:24px;
+  padding:25px;
+  box-shadow:0 5px 10px rgba(0,0,0,1);
+  position:relative;
+}
+
+.profile-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  height:10rem;
+  width:100%;
+  border-radius:24px 24px 0 0;
+  background-color:rgb(0, 155, 167);
+}
+
+.image{
+  position:relative;
+  height:8rem;
+  width:8rem;
+  border-radius:2rem;
+  background-color:aqua;
+  padding: 4px;
+}
+
+.image .profile-img{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  border-radius:3rem;
+  border: 6px  solid rgb(0, 155, 167);
+}
+
+.text-data{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:2rem;  
+}
+
+.text-data .name{
+  font-size:1.7rem;
+  font-weight:600;
+}
+
+.text-data .job{
+  font-size:1rem;
+  font-weight:300;
+}
+
+.profile-card .profile-media{
+  display:flex;
+  align-items: center;
+  margin-top:1rem;
+}
+
+.profile-media .link{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color:antiquewhite;
+  font-size:20px;
+  height:3rem;
+  width:3rem;
+  border-radius:50%;
+  margin:8px;
+  background-color:rgb(0, 116, 224);
+  text-decoration:none;
+}
+
+.profile-card .profile-button{
+  display:flex;
+  align-items:center;
+  margin-top:25px;
+}
+
+.profile-button .button{
+  color:antiquewhite;
+  font-size:14px;
+  font-weight:400;
+  border:none;
+  border-radius:24px;
+  margin:0 10px;
+  padding:8px 24px;
+  background-color:rgb(0, 163, 168);
+  cursor:pointer;
+  transition:all 0.35s ease;
+}
+
+.profile-button .button:hover{
+  background-color: antiquewhite;
+  color:rgb(0, 112, 116);
+}
+
+.profile-card .analytics{
+  display:flex;
+  align-items:center;
+  margin-top:25px;
+}
+
+.analytics .data{
+  display:flex;
+  align-items:center;
+  padding:20px;
+  border-right: 1px ;
+}
+
+.data i{
+  font-size:18px;
+  margin-right:6px;
+}
+.data:last-child{
+  border-right:none;
+}
+
+/*
+.profile-button .button{
+  background-color: rgb(200, 0, 0);
+  height:10px;
+  width:14px;
+  border-radius: 0.3rem; 
+  font-size: 15px;
+  border:none;
+  color:whitesmoke;
+  cursor:pointer;
+  transition:background-color 0.5s, color 0.25s;
+}
+
+.button:hover{
+  background-color: whitesmoke;
+  color:rgb(200, 0, 0);
+}
+
+.button:active{
+  opacity:0.8;
+}  
+*/

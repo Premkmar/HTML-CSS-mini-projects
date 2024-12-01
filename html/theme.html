@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/theme.css">
+    <title>Toggle Button Example</title>
+</head>
+<body>
+    <div class="toggle-container">
+        <button id="toggle-button" class="light-mode">
+            <span class="icon">☀️</span>
+        </button>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      toggleButton.addEventListener('click', () => {
+        if (toggleButton.classList.contains('light-mode')) {
+          toggleButton.classList.remove('light-mode');
+          toggleButton.classList.add('dark-mode');
+          toggleButton.querySelector('.icon').textContent = '🌙'; // Change to moon icon
+          } else {
+            toggleButton.classList.remove('dark-mode');
+            toggleButton.classList.add('light-mode');
+            toggleButton.querySelector('.icon').textContent = '☀️'; // Change to sun icon
+            }
+});
+    </script>
+</body>
+</html>
